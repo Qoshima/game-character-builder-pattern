@@ -47,4 +47,19 @@ public class GameCharacter {
     public void setDefense(int defense) {
         this.defense = defense;
     }
+
+    @Override
+    public String toString() {
+        return "GameCharacter{" +
+                "name='" + name + '\'' +
+                ", characterClass='" + characterClass + '\'' +
+                ", weapon='" + weapon + '\'' +
+                ", armor='" + armor + '\'' +
+                ", health=" + health +
+                ", mana=" + mana +
+                ", strength=" + strength +
+                ", agility=" + agility +
+                ", defense=" + defense +
+                '}';
+    }
 }
