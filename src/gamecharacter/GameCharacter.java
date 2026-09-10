@@ -11,4 +11,40 @@ public class GameCharacter {
     private int strength;
     private int agility;
     private int defense;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setCharacterClass(String characterClass) {
+        this.characterClass = characterClass;
+    }
+
+    public void setWeapon(String weapon) {
+        this.weapon = weapon;
+    }
+
+    public void setArmor(String armor) {
+        this.armor = armor;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public void setMana(int mana) {
+        this.mana = mana;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
+
+    public void setAgility(int agility) {
+        this.agility = agility;
+    }
+
+    public void setDefense(int defense) {
+        this.defense = defense;
+    }
 }
