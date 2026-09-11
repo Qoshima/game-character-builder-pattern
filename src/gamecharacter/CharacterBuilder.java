@@ -1,6 +1,6 @@
 package gamecharacter;
 
-public class CharacterBuilder {
+public interface CharacterBuilder {
     CharacterBuilder setName(String name);
 
     CharacterBuilder setWeapon(String weapon);
