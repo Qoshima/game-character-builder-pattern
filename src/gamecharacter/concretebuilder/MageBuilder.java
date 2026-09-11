@@ -6,14 +6,14 @@ public class MageBuilder implements CharacterBuilder {
     private final GameCharacter character = new GameCharacter();
 
     public MageBuilder(){
-        character.setCharacterClass("Tank");
-        character.setWeapon("Shield");
-        character.setArmor("Plate armor");
-        character.setHealth(200);
-        character.setMana(40);
-        character.setStrength(90);
-        character.setAgility(40);
-        character.setDefense(95);
+        character.setCharacterClass("Mage");
+        character.setWeapon("Silver Staff");
+        character.setArmor("Magic Cape");
+        character.setHealth(70);
+        character.setMana(170);
+        character.setStrength(20);
+        character.setAgility(60);
+        character.setDefense(40);
     }
 
     @Override

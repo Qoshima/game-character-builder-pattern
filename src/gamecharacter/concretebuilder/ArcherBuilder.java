@@ -6,14 +6,14 @@ public class ArcherBuilder implements CharacterBuilder{
     private final GameCharacter character = new GameCharacter();
 
     public ArcherBuilder(){
-        character.setCharacterClass("Tank");
-        character.setWeapon("Shield");
-        character.setArmor("Plate armor");
-        character.setHealth(200);
-        character.setMana(40);
-        character.setStrength(90);
-        character.setAgility(40);
-        character.setDefense(95);
+        character.setCharacterClass("Archer");
+        character.setWeapon("Composite Bow");
+        character.setArmor("Leather Armor");
+        character.setHealth(90);
+        character.setMana(20);
+        character.setStrength(60);
+        character.setAgility(150);
+        character.setDefense(70);
     }
 
 

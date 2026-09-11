@@ -8,7 +8,7 @@ public class TankBuilder implements CharacterBuilder{
     public TankBuilder(){
         character.setCharacterClass("Tank");
         character.setWeapon("Shield");
-        character.setArmor("Plate armor");
+        character.setArmor("Plate Armor");
         character.setHealth(200);
         character.setMana(40);
         character.setStrength(90);
