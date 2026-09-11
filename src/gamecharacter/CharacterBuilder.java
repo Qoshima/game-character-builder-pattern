@@ -1,21 +1,49 @@
 package gamecharacter;
 
-public interface CharacterBuilder {
-    CharacterBuilder setName(String name);
+public abstract class CharacterBuilder {
+    protected final GameCharacter character = new GameCharacter();
 
-    CharacterBuilder setWeapon(String weapon);
+    public CharacterBuilder setName(String name){
+        character.setName(name);
+        return this;
+    }
 
-    CharacterBuilder setArmor(String armor);
+    public CharacterBuilder setWeapon(String weapon){
+        character.setWeapon(weapon);
+        return this;
+    }
 
-    CharacterBuilder setHealth(int health);
+    public CharacterBuilder setArmor(String armor){
+        character.setArmor(armor);
+        return this;
+    }
 
-    CharacterBuilder setMana(int mana);
+    public CharacterBuilder setHealth(int health){
+        character.setHealth(health);
+        return this;
+    }
 
-    CharacterBuilder setStrength(int strength);
+    public CharacterBuilder setMana(int mana){
+        character.setMana(mana);
+        return this;
+    }
 
-    CharacterBuilder setAgility(int agility);
+    public CharacterBuilder setStrength(int strength){
+        character.setStrength(strength);
+        return this;
+    }
 
-    CharacterBuilder setDefense(int defense);
+    public CharacterBuilder setAgility(int agility){
+        character.setAgility(agility);
+        return this;
+    }
 
-    GameCharacter build();
+    public CharacterBuilder setDefense(int defense){
+        character.setDefense(defense);
+        return this;
+    }
+
+    public GameCharacter build(){
+        return character;
+    }
 }

@@ -2,9 +2,7 @@ package gamecharacter.concretebuilder;
 import gamecharacter.CharacterBuilder;
 import gamecharacter.GameCharacter;
 
-public class ArcherBuilder implements CharacterBuilder{
-    private final GameCharacter character = new GameCharacter();
-
+public class ArcherBuilder extends CharacterBuilder {
     public ArcherBuilder(){
         character.setCharacterClass("Archer");
         character.setWeapon("Composite Bow");
@@ -14,59 +12,5 @@ public class ArcherBuilder implements CharacterBuilder{
         character.setStrength(60);
         character.setAgility(150);
         character.setDefense(70);
-    }
-
-
-    @Override
-    public CharacterBuilder setName(String name) {
-        character.setName(name);
-        return this;
-    }
-
-    @Override
-    public CharacterBuilder setWeapon(String weapon) {
-        character.setWeapon(weapon);
-        return this;
-    }
-
-    @Override
-    public CharacterBuilder setArmor(String armor) {
-        character.setArmor(armor);
-        return this;
-    }
-
-    @Override
-    public CharacterBuilder setHealth(int health) {
-        character.setHealth(health);
-        return this;
-    }
-
-    @Override
-    public CharacterBuilder setMana(int mana) {
-        character.setMana(mana);
-        return this;
-    }
-
-    @Override
-    public CharacterBuilder setStrength(int strength) {
-        character.setStrength(strength);
-        return this;
-    }
-
-    @Override
-    public CharacterBuilder setAgility(int agility) {
-        character.setAgility(agility);
-        return this;
-    }
-
-    @Override
-    public CharacterBuilder setDefense(int defense) {
-        character.setDefense(defense);
-        return this;
-    }
-
-    @Override
-    public GameCharacter build() {
-        return character;
     }
 }
