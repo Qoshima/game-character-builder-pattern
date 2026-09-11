@@ -3,9 +3,16 @@ import gamecharacter.CharacterBuilder;
 import gamecharacter.GameCharacter;
 
 public class WarriorBuilder implements CharacterBuilder{
-    private GameCharacter character = new GameCharacter();
+    private final GameCharacter character = new GameCharacter();
     public WarriorBuilder(){
         character.setCharacterClass("Warrior");
+        character.setWeapon("Sword");
+        character.setArmor("Chain Mail");
+        character.setHealth(175);
+        character.setMana(30);
+        character.setStrength(130);
+        character.setAgility(60);
+        character.setDefense(80);
     }
     @Override
     public CharacterBuilder setName(String name) {
