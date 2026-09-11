@@ -44,6 +44,9 @@ public abstract class CharacterBuilder {
     }
 
     public GameCharacter build(){
+        if (character.getName() == null || character.getName().isBlank()){
+            throw new IllegalStateException("Character name cant be empty");
+        }
         return character;
     }
 }

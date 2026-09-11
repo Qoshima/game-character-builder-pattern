@@ -19,5 +19,10 @@ public class Main {
         director.setBuilder(new TankBuilder());
         GameCharacter tank = director.constructCharacter("Arthas");
         System.out.println(tank);
+
+//        new WarriorBuilder().build();
+//        new MageBuilder().build();
+//        new ArcherBuilder().build();
+//        new TankBuilder().build();
     }
 }

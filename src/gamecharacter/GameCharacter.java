@@ -48,6 +48,10 @@ public class GameCharacter {
         this.defense = defense;
     }
 
+    public String getName(){
+        return name;
+    }
+
     @Override
     public String toString() {
         return "GameCharacter{" +
