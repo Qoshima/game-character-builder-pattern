@@ -4,6 +4,7 @@ import gamecharacter.GameCharacter;
 
 public class TankBuilder implements CharacterBuilder{
     private final GameCharacter character = new GameCharacter();
+
     public TankBuilder(){
         character.setCharacterClass("Tank");
         character.setWeapon("Shield");
